@@ -12,7 +12,6 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 30em;
     height: 30em;
-    border: 1px solid lightblue;
     border-radius: 5px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -22,7 +21,6 @@ main {
 .field {
     display: grid;
     grid-template-columns: auto auto auto;
-    border: 1px solid lightblue;
     font-size: 1em;
 }
 .field#a1 {
@@ -36,4 +34,18 @@ main {
 }
 .field#c3 {
     border-radius: 0 0 5px 0;
+}
+
+/* Borders */
+#a1,#a2,#a3,#b1,#b2,#b3 {
+    border-bottom: 1px solid lightblue;
+}
+#b1,#b2,#b3,#c1,#c2,#c3 {
+    border-top: 1px solid lightblue;
+}
+#a2,#a3,#b2,#b3,#c2,#c3 {
+    border-left: 1px solid lightblue;
+}
+#a1,#a2,#b1,#b2,#c1,#c2 {
+    border-right: 1px solid lightblue;
 }
