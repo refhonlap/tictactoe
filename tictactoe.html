@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tictactoe</title>
     <link rel="stylesheet" href="/tictactoe.css">
-    <script src="/tictactoe.js"></script>
 </head>
 
 <body>
 
     <main>
-        <h1>Tic-tac-toe</h1>
-        <div class="tictactoeGame">
-<!-- row 1 -->
-            <div class="field" id="a1"></div>
-            <div class="field" id="a2"></div>
-            <div class="field" id="a3"></div>
-<!-- row 2 -->
-            <div class="field" id="b1"></div>
-            <div class="field" id="b2"></div>
-            <div class="field" id="b3"></div>
-<!-- row 3 -->
-            <div class="field" id="c1"></div>
-            <div class="field" id="c2"></div>
-            <div class="field" id="c3"></div>
-        </div>
+        <section>
+            <h1 class="game--title">Tic Tac Toe</h1>
+            <div class="game--container">
+                <div class="cell" data-cell-index="0"></div>
+                <div class="cell" data-cell-index="1"></div>
+                <div class="cell" data-cell-index="2"></div>
+
+                <div class="cell" data-cell-index="3"></div>
+                <div class="cell" data-cell-index="4"></div>
+                <div class="cell" data-cell-index="5"></div>
+
+                <div class="cell" data-cell-index="6"></div>
+                <div class="cell" data-cell-index="7"></div>
+                <div class="cell" data-cell-index="8"></div>
+            </div>
+            <h3 class="game--status"></h3>
+            <button class="game--restart">Új játék</button>
+        </section>
     </main>
+
+    <script src="/tictactoe.js"></script>
 
 </body>
 

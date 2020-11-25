@@ -1,51 +1,38 @@
 body {
-    background-color: grey;
+    font-family: "Arial", sans-serif;
+    background-color: lightgrey;
 }
-
-main {
+section {
     text-align: center;
 }
-
-.tictactoeGame {
-    margin: auto;
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 246px;
+    margin: 50px auto;
     background-color: rgb(11, 130, 167);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 30em;
-    height: 30em;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 80px;
+    height: 80px;
+    border: 1px solid lightblue;
+    cursor: pointer;
+    line-height: 80px;
+    font-size: 50px;
 }
 
-/* Fields */
-.field {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    font-size: 1em;
-}
-.field#a1 {
+.cell:nth-child(1) {
     border-radius: 5px 0 0;
 }
-.field#a3 {
+.cell:nth-child(3) {
     border-radius: 0 5px 0 0;
 }
-.field#c1 {
+.cell:nth-child(7) {
     border-radius: 0 0 0 5px;
 }
-.field#c3 {
+.cell:nth-child(9) {
     border-radius: 0 0 5px 0;
-}
-
-/* Borders */
-#a1,#a2,#a3,#b1,#b2,#b3 {
-    border-bottom: 1px solid lightblue;
-}
-#b1,#b2,#b3,#c1,#c2,#c3 {
-    border-top: 1px solid lightblue;
-}
-#a2,#a3,#b2,#b3,#c2,#c3 {
-    border-left: 1px solid lightblue;
-}
-#a1,#a2,#b1,#b2,#c1,#c2 {
-    border-right: 1px solid lightblue;
 }
